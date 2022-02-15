@@ -1,4 +1,7 @@
-import configJson from "./auth_config.json";
+require('dotenv').config()
+const domain = process.env.AUTH0_DOMAIN
+const clientId = process.env.AUTH0_CLIENT_ID
+const audience = process.env.AUTH0_AUDIENCE
 
 export function getConfig() {
   // Configure the audience here. By default, it will take whatever is in the config
@@ -7,14 +10,14 @@ export function getConfig() {
   // don't have an API).
   // If this resolves to `null`, the API page changes to show some helpful info about what to do
   // with the audience.
-  const audience =
-    configJson.audience && configJson.audience !== "YOUR_API_IDENTIFIER"
-      ? configJson.audience
+  const audience2 =
+  audience && audience !== "YOUR_API_IDENTIFIER"
+      ? audience
       : null;
 
   return {
-    domain: configJson.domain,
-    clientId: configJson.clientId,
-    ...(audience ? { audience } : null),
+    domain: domain,
+    clientId: clientId,
+    ...(audience2 ? { audience2 } : null),
   };
 }
