@@ -19,7 +19,6 @@ import {
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
-  Dropdown,
   DropdownItem,
 } from "reactstrap";
 
