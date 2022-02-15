@@ -7,6 +7,8 @@ import { Auth0Provider } from "@auth0/auth0-react";
 import history from "./utils/history";
 import { getConfig } from "./config";
 
+
+require('dotenv').config()
 const onRedirectCallback = (appState) => {
   history.push(
     appState && appState.returnTo ? appState.returnTo : window.location.pathname
@@ -20,8 +22,7 @@ const config = getConfig();
 const providerConfig = {
   domain: config.domain,
   clientId: config.clientId,
-  ...(config.audience ? { audience: config.audience } : null),
-  redirectUri: window.location.origin,
+  redirectUri: process.env.VERCEL_URL,
   onRedirectCallback,
 };
 
