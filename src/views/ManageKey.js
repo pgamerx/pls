@@ -134,7 +134,7 @@ export const ManageKeyComponent = () => {
         </p>
         
         <Button color="primary" className="mt-5" onClick={callApi}>
-          Regenrate A New Key
+          Generate A New Key
         </Button>
         <Alert color="warning">
             When generating new api key, your old api key (if any) will be
