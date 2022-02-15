@@ -22,7 +22,7 @@ const config = getConfig();
 const providerConfig = {
   domain: config.domain,
   clientId: config.clientId,
-  redirectUri: "https://api-info.pgamerx.com/api/callback",
+  redirectUri: "https://api-info.pgamerx.com/",
   onRedirectCallback,
 };
 
