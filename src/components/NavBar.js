@@ -73,10 +73,10 @@ const NavBar = () => {
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem href="https://pgamerx.com/donate" target="_blank">Fund (Donate)</DropdownItem>
-                  <DropdownItem href="https://rapidapi.com/pgamerxdev/api/random-stuff-api/specs" target="_blank">Documentation (RapidApi)</DropdownItem>
+                  <DropdownItem href="https://api.pgamerx.com/docs" target="_blank">Documentation (Website)</DropdownItem>
                   <DropdownItem href="https://u.pgamerx.com/discord" target="_blank">Support (Discord)</DropdownItem>
                   <DropdownItem href="https://rapidapi.com/pgamerxdev/api/random-stuff-api/pricing" target="_blank">Premium (RapidApi)</DropdownItem>
-                  <DropdownItem href="https://rapidapi.com/pgamerxdev/api/random-stuff-api/" target="_blank">Playground (RapidApi)</DropdownItem>
+                  <DropdownItem href="https://api.pgamerx.com/new" target="_blank">Playground (RapidApi)</DropdownItem>
                   <DropdownItem href="mailto:admin@pgamerx.com" target="_blank">Contact (Email)</DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
